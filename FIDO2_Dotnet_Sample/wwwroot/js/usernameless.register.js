@@ -12,11 +12,11 @@ async function handleRegisterSubmit(event) {
     let authenticator_attachment = "";
 
     // possible values: preferred, required, discouraged
-    let user_verification = "discouraged";
+    let user_verification = "required";
 
     // possible values: true, false
     // NOTE: For usernameless scenarios, resident key must be set to true.
-    let requireResidentKey = false;
+    let requireResidentKey = true;
 
 
 

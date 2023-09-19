@@ -6,12 +6,12 @@ async function handleRegisterSubmit(event) {
     let username = this.username.value;
 
     // possible values: none, direct, indirect
-    let attestation_type = "indirect";
+    let attestation_type = "none";
     // possible values: <empty>, platform, cross-platform
     let authenticator_attachment = "";
 
     // possible values: preferred, required, discouraged
-    let user_verification = "preferred";
+    let user_verification = "discouraged";
 
     // possible values: true, false
     let requireResidentKey = false;
