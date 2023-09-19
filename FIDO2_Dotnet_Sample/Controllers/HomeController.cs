@@ -1,6 +1,4 @@
-﻿using FIDO2_Dotnet_Sample.Models;
-using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics;
+﻿using Microsoft.AspNetCore.Mvc;
 
 namespace FIDO2_Dotnet_Sample.Controllers
 {
@@ -13,20 +11,19 @@ namespace FIDO2_Dotnet_Sample.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public IActionResult MFA()
         {
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Passwordless()
         {
             return View();
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
+        public IActionResult Usernameless()
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return View();
         }
     }
 }
