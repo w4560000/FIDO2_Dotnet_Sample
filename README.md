@@ -1,26 +1,27 @@
-## FIDO2 Sample
+## FIDO2 Sample  
 
-°Ñ¦Ò¦Û: https://github.com/passwordless-lib/fido2-net-lib#examples
+åƒè€ƒè‡ª: https://github.com/passwordless-lib/fido2-net-lib#examples  
 
-## °Ñ¼Æ
-### userVerification (¨Ï¥ÎªÌÅçÃÒ­n¨D)
-https://w3c.github.io/webauthn/#user-verification
-https://w3c.github.io/webauthn/#enumdef-userverificationrequirement
-	- required (­n¨D¨Ï¥ÎªÌÅçÃÒ)
-	- preferred (®Ú¾Ú¨Ï¥ÎªÌ¦w¥ş©Ê³]©w¨ÓÅçÃÒ¡A¨Ï¥Î¦³³]©w PIN½X or «ü¯¾)
-	- discouraged (¦b¾Ş§@´Á¶¡¤£­n¨DÅçÃÒ¡A¦ı·í¨Ï¥Î¦³¨Ï¥Î¹êÅéª÷Æ_ or ¥Íª«ÅGÃÒÅçÃÒ¡A¦¹®É¤´·|ÅçÃÒ)
-### requireResidentKey (¬O§_­n¨Dª÷Æ_±`¾n¦b«È¤áºİ)
-	- true (¬O) PS ´ú¸Õ Windwos Hello Pin (­Y·í Pin ²¾°£¡A«h±`¾nª÷Æ_¤]·|²¾°£)
-	- false (§_)
-https://w3c.github.io/webauthn/#dom-authenticatorselectioncriteria-requireresidentkey
+## åƒæ•¸  
+### userVerification (ä½¿ç”¨è€…é©—è­‰è¦æ±‚)  
+	- required (è¦æ±‚ä½¿ç”¨è€…é©—è­‰)  
+	- preferred (æ ¹æ“šä½¿ç”¨è€…å®‰å…¨æ€§è¨­å®šä¾†é©—è­‰ï¼Œä½¿ç”¨æœ‰è¨­å®š PINç¢¼ or æŒ‡ç´‹)  
+	- discouraged (åœ¨æ“ä½œæœŸé–“ä¸è¦æ±‚é©—è­‰ï¼Œä½†ç•¶ä½¿ç”¨æœ‰ä½¿ç”¨å¯¦é«”é‡‘é‘° or ç”Ÿç‰©è¾¯è­‰é©—è­‰ï¼Œæ­¤æ™‚ä»æœƒé©—è­‰)  
+https://w3c.github.io/webauthn/#user-verification  
+https://w3c.github.io/webauthn/#enumdef-userverificationrequirement  
 
-## ¬yµ{
-1. µù¥U¸Ë¸m
-	1.1 /makeCredentialOptions (¥´«áºİAPI ¨ú±o¾ÌÃÒ°Ñ¼Æ)
-	1.2  navigator.credentials.create (Web API «Ø¥ß¾ÌÃÒ)
-	1.3 /makeCredential (¥´«áºİAPI Àx¦s¾ÌÃÒ)
+### requireResidentKey (æ˜¯å¦è¦æ±‚é‡‘é‘°å¸¸é§åœ¨å®¢æˆ¶ç«¯)  
+	- true (æ˜¯) PS æ¸¬è©¦ Windwos Hello Pin (è‹¥ç•¶ Pin ç§»é™¤ï¼Œå‰‡å¸¸é§é‡‘é‘°ä¹Ÿæœƒç§»é™¤)  
+	- false (å¦)  
+https://w3c.github.io/webauthn/#dom-authenticatorselectioncriteria-requireresidentkey  
 
-2. µn¤J
-	2.1 /assertionOptions (¥´«áºİAPI ¥ıÅçÃÒ±b¸¹¬O§_¦s¦b¡A¨Ã¦^¶Ç¾ÌÃÒ°Ñ¼Æ)
-	2.2 navigator.credentials.get (Web API ¨ú±o¾ÌÃÒ)
-	2.3 /makeAssertion (±N¾ÌÃÒ¶Ç¦^«áºİÅçÃÒ)
+## æµç¨‹
+1. è¨»å†Šè£ç½®
+	1.1 /makeCredentialOptions (æ‰“å¾Œç«¯API å–å¾—æ†‘è­‰åƒæ•¸)  
+	1.2  navigator.credentials.create (Web API å»ºç«‹æ†‘è­‰)  
+	1.3 /makeCredential (æ‰“å¾Œç«¯API å„²å­˜æ†‘è­‰)  
+
+2. ç™»å…¥
+	2.1 /assertionOptions (æ‰“å¾Œç«¯API å…ˆé©—è­‰å¸³è™Ÿæ˜¯å¦å­˜åœ¨ï¼Œä¸¦å›å‚³æ†‘è­‰åƒæ•¸)  
+	2.2 navigator.credentials.get (Web API å–å¾—æ†‘è­‰)  
+	2.3 /makeAssertion (å°‡æ†‘è­‰å‚³å›å¾Œç«¯é©—è­‰)  
